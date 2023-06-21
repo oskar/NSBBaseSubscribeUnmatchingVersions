@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <!-- Downgrade these packages to NSB 7 (2.4.0 and 7.0.5) and the app will behave as expected. -->
+        <PackageReference Include="NServiceBus.Newtonsoft.Json" Version="3.0.0" />
+        <PackageReference Include="NServiceBus.RabbitMQ" Version="8.0.3" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\MessagesV2\MessagesV2.csproj" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <!-- If the line below is removed, the two messages project will have the same assembly version (1.0.0.0)
+             and the app will behave as expected. -->
+        <Version>2.0.0</Version>
+        <AssemblyName>Messages</AssemblyName>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="..\Messages\*.cs" />
+    </ItemGroup>
+</Project>
